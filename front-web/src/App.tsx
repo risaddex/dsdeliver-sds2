@@ -1,14 +1,10 @@
-// https://youtu.be/KyFhLMSqn-U
-// https://youtu.be/r5mdpKNN8N0
 import './App.css';
-import Home from './Home';
-import Navbar from './Navbar';
+import Routes from './Routes';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
+      <Routes />
     </>
   );
 }
