@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchProducts, saveOrder } from '../api';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { toast, ToastContainer } from 'react-toastify';// necesário para os Pop ups
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
