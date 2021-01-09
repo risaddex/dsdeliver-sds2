@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchProducts, saveOrder } from '../api';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';// necesário para os Pop ups
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
 import OrderLocation from './OrderLocation';
