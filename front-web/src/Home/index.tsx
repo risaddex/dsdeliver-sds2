@@ -11,7 +11,7 @@ function Home() {
           <div className="home-content">
             <div className="home-actions">
               <h1 className="home-title">
-                Faça seu pedido<br /> que entregamos<br />  pra você
+                Faça seu pedido <br /> que entregamos<br />  pra você
             </h1>
               <h3 className="home-subtitle">
                 Faça seu pedido que em poucos minutos <br />
