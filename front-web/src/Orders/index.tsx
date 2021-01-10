@@ -10,6 +10,9 @@ import ProductsList from './ProductsList';
 import StepsHeader from './StepsHeader';
 import './styles.css';
 import { OrderLocationData, Product } from './types';
+import LoadingBar from '../LoadingBar';
+
+let barStatus: boolean = true;
 
 function Orders() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -21,7 +24,10 @@ function Orders() {
 
   useEffect(() => {
     fetchProducts()
-      .then(response => setProducts(response.data ))
+      .then(response => {
+        setProducts(response.data );
+        barStatus = false;
+      })
       .catch(error => {
         toast.warning('Erro ao enviar pedido');
       })
@@ -59,6 +65,7 @@ function Orders() {
     <>
       <div className="orders-container">
         <StepsHeader />
+        <LoadingBar isActive={barStatus}/>
         <ProductsList
           products={products}
           onSelectProduct={handleSelectProduct}
