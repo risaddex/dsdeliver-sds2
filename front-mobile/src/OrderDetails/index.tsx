@@ -52,8 +52,8 @@ function OrderDetails({ route }: Props) {
         </RectButton>
       </View>
     </>
-  );
-}
+    );
+  }
 
 const styles = StyleSheet.create({
   container: {
