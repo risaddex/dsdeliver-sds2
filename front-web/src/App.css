@@ -26,6 +26,7 @@ a {
 
 .main-loading-bar{
   margin: 0 auto;
+  margin-bottom: 10px;
   border: 10px solid #f3f3f3;
   border-top: 10px solid var(--primary-color);
   text-shadow: black;

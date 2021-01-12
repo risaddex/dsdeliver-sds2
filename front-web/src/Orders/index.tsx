@@ -25,10 +25,10 @@ function Orders() {
   useEffect(() => {
     fetchProducts()
       .then(response => {
-        setProducts(response.data );
         barStatus = false;
+        setProducts(response.data );
       })
-      .catch(error => {
+      .catch(() => {
         toast.warning('Erro ao enviar pedido');
       })
   }, []);
