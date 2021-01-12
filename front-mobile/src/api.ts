@@ -1,7 +1,7 @@
 import axios from "axios";
 import Orders from "./Orders";
 
-const API_URL = 'https://risaddex-sds2.herokuapp.com';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export function fetchOrders() {
   return axios(`${API_URL}/orders`);
