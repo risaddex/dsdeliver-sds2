@@ -8,4 +8,4 @@
 
 [front-mobile](https://github.com/risaddex/dsdeliver-sds2/tree/main/front-web)
 
-[published version (netlify)](https://sdsdeliver.netlify.app)
+[published version (netlify)](https://risaddex.netlify.app)
